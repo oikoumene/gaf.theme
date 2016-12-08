@@ -80,7 +80,7 @@ img{
 	background:none;
 	color:#c92539;}
 .qh{
-	width:10%;
+	width:20%;
 	height:200px;
 	float:right;
 	text-align:center;
@@ -99,6 +99,8 @@ img{
 .qh a.qh_1{
 	color:#f1f0f0;
 	background-color:#c92539;}
+
+	.qh a:nth-child(1){margin-left: 20px;text-transform: uppercase;}
 
 .banner{
 	width:70%;
