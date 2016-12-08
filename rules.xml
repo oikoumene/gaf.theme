@@ -45,7 +45,12 @@
             css:content="#portal-siteactions"
             />
 
-        
+        <before css:theme-children="div.qh"
+            css:content="#personaltools-login"
+            />
+        <before css:theme-children="div.qh"
+            css:content="#personaltools-logout > a"
+            />
 
     </rules>
 
