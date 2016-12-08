@@ -26,7 +26,7 @@
         <after css:theme-children="html body" css:content="html head script" />
 
         <!-- Insert your own rules here -->
-        
+
         <replace
             css:theme="div.logo img"
             css:content="a#portal-logo img"
@@ -38,13 +38,13 @@
             />
         <replace
             css:theme-children="div.fy_right_1"
-            css:content-children="#content"
+            css:content-children="#portal-column-content"
             />
         <replace
             css:theme-children=".footer_1"
             css:content="#portal-siteactions"
             />
-            
+
         
 
     </rules>
