@@ -5,7 +5,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <!-- Apply the following rules to standard Plone pages -->
-        <rules css:if-content="#visual-portal-wrapper">
+    <rules css:if-content="#visual-portal-wrapper">
 
         <theme href="index.html" />
 
@@ -26,34 +26,35 @@
         <after css:theme-children="html body" css:content="html head script" />
 
         <!-- Insert your own rules here -->
-
+        
         <replace
-            css:theme="div.logo img"
-            css:content="a#portal-logo img"
+            css:theme=".branding > a"
+            css:content="a#portal-logo"
             />
-
         <replace
-            css:theme-children=".fy_left > ul"
+            css:theme-children="#main-menu"
             css:content-children="#portal-globalnav"
             />
         <replace
-            css:theme-children="div.fy_right_1"
+            css:theme-children=".main-column"
             css:content-children="#portal-column-content"
             />
         <replace
-            css:theme-children=".footer_1"
-            css:content="#portal-siteactions"
+            css:theme-children=".left-column"
+            css:content-children="#portal-column-one"
             />
-
-        <before css:theme-children="div.qh"
-            css:content="#personaltools-login"
+        <replace
+            css:theme-children="#footer-link"
+            css:content-children="#portal-siteactions"
             />
-        <before css:theme-children="div.qh"
-            css:content="#personaltools-logout > a"
+        <replace css:theme-children="#language-selector > ul"
+            css:content-children="#portal-languageselector"
             />
+            
+        <before css:theme="body > div.header.clearfix > div > div > div.col-lg-9">
+            <xsl:copy-of css:select="#portal-personaltools-wrapper"/>    
+        </before>
 
     </rules>
-
-
 
 </rules>
