@@ -1,0 +1,154 @@
+/* Space out content a bit */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #FCFCFC;
+}
+
+/*fix plone css*/
+div.row {
+  float: none !important; 
+  width: auto !important; 
+}
+a:link, a:visited{
+  color: #b7040b;
+}
+.nav-pills>li.selected>a, .nav-pills>li.selected>a:focus, .nav-pills>li.selected>a:hover {
+    color: #fff;
+    background-color: #b7040b;
+}
+
+/*round btn*/
+.btn-round-lg{
+border-radius: 22.5px;
+}
+.btn-round{
+border-radius: 17px;
+}
+.btn-round-sm{
+border-radius: 15px;
+}
+.btn-round-xs{
+border-radius: 11px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.main-content,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  /*padding: 20px 0;*/
+  background: url(./images/bj.jpg) repeat-x left bottom;
+  background-color: #fdf6f0;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/*main menu*/
+#main-menu{
+  margin-top: 50px;
+}
+
+.main-column,
+.left-column,
+.right-column{
+  background-color: #f2e9e0;
+  box-shadow: #e6e6e6 2px 3px 5px;
+  border-radius: 20px;
+}
+.main-column{
+  background-image: url(./images/caihong.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/*content container*/
+#content-container{
+  background: url(./images/footer.png) repeat-x bottom left;
+}
+
+/* Custom page footer */
+.footer {
+  padding: 40px 0 20px;
+  background-color: #fdf6f0;
+}
+
+#footer-link{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+#footer-link li{
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  background-image: url(./images/banner_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-color: transparent;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  }
+
+  .jumbotron .inner-contaner{
+    margin-bottom: -30px;
+  }
+  .jumbotron img{
+    width: 100%;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #ccc;
+  }
+
+/* Supporting marketing content */
+.main-content {
+  margin: 40px 0;
+}
+.main-content p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .main-content,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
