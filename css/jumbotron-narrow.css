@@ -19,6 +19,10 @@ a:link, a:visited{
     color: #fff;
     background-color: #b7040b;
 }
+#content,
+dl.portlet {
+    font-size: inherit;
+}
 
 /*round btn*/
 .btn-round-lg{
@@ -57,9 +61,27 @@ padding-right: 10px;
   line-height: 40px;
 }
 
+/*language selector*/
+#language-selector{
+    position: absolute;
+    top: -39px;
+    right: 80px;    
+}
+#language-selector ul li{
+    padding:0;    
+}
+#language-selector ul li a{
+    padding: 4px 6px;    
+}
+#language-selector ul li.currentLanguage>a,
+#language-selector ul li a:hover{
+    color: #f1f0f0;
+    background-color: #c92539;
+}
+
 /*main menu*/
 #main-menu{
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .main-column,
@@ -68,6 +90,8 @@ padding-right: 10px;
   background-color: #f2e9e0;
   box-shadow: #e6e6e6 2px 3px 5px;
   border-radius: 20px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 .main-column{
   background-image: url(./images/caihong.png);

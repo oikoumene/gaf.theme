@@ -27,9 +27,9 @@
 
         <!-- Insert your own rules here -->
         
-        <replace
-            css:theme=".branding > a"
-            css:content="a#portal-logo"
+       <replace
+            css:theme="#branding > a"
+            css:content="#portal-logo"
             />
         <replace
             css:theme-children="#main-menu"
@@ -54,6 +54,10 @@
         <before css:theme="body > div.header.clearfix > div > div > div.col-lg-9">
             <xsl:copy-of css:select="#portal-personaltools-wrapper"/>    
         </before>
+        
+        <replace css:theme-children="#banner-ing-wrapper">
+            <img src="./media/banner-img.jpg" alt="banner" />
+        </replace>
 
     </rules>
 
