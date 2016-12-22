@@ -25,7 +25,33 @@
         <!-- Copy script tags from Plone head to end of body -->
         <after css:theme-children="html body" css:content="html head script" />
 
-        <!-- Insert your own rules here -->
+        <!-- Insert your own rules -->
+        <replace css:theme=".jumbotron" css:if-content=".template-newsitem_view">
+            <div id="feature-img-container" class="row">
+              <div id="banner" class="col-md-4">
+                    <img src="++theme++gaf.theme-master/images/xiaoguotu.jpg" alt="" />
+                    <div class="banner_1_1">
+        			    <div class="banner_1_1_a">测试文章3内容</div>
+    				    <Span class="banner_1_1_b"><a href="javascript:;">Leading</a></Span>
+    			    </div>
+              </div>
+              <div id="banner" class="col-md-4">
+                    <img src="++theme++gaf.theme-master/images/xiaoguotu.jpg" alt="" />
+                    <div class="banner_1_1">
+            		    <div class="banner_1_1_a">测试文章3内容</div>
+    				    <Span class="banner_1_1_b"><a href="javascript:;">Leading</a></Span>
+    			    </div>
+              </div>
+              <div id="banner" class="col-md-4">
+                    <img src="++theme++gaf.theme-master/images/xiaoguotu.jpg" alt="" />
+                    <div class="banner_1_1">
+            		    <div class="banner_1_1_a">测试文章3内容</div>
+    				    <Span class="banner_1_1_b"><a href="javascript:;">Leading</a></Span>
+    			    </div>
+              </div>
+            </div>
+        </replace>
+        
         
        <replace
             css:theme="#branding > a"
