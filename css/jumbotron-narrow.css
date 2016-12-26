@@ -23,6 +23,19 @@ a:link, a:visited{
 dl.portlet {
     font-size: inherit;
 }
+#contentActionMenus dl{
+    margin-bottom:0;    
+}
+#contentActionMenus dl > dt > a{line-height: 20px;}
+ul#content-views a{
+    margin-bottom:0;
+    line-height: 20px;
+}
+#content a, dl.portlet a,
+#content a:visited, dl.portlet a:visited{
+    color: #c92539 !important; 
+}
+
 
 /*round btn*/
 .btn-round-lg{
@@ -81,7 +94,7 @@ padding-right: 10px;
 
 /*main menu*/
 #main-menu{
-  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .main-column,
@@ -90,8 +103,7 @@ padding-right: 10px;
   background-color: #f2e9e0;
   box-shadow: #e6e6e6 2px 3px 5px;
   border-radius: 20px;
-  padding-top:20px;
-  padding-bottom:20px;
+  padding:20px;
 }
 .main-column{
   background-image: url(./images/caihong.png);
@@ -176,3 +188,40 @@ padding-right: 10px;
     border-bottom: 0;
   }
 }
+
+
+/* main feature images */
+#feature-img-container > div > img{
+    width:100%;    
+}
+
+#banner{
+    overflow: hidden;    
+}
+
+.banner_1_1{
+    width:70%;
+	height:385px;
+	float:left;
+	position:absolute;
+	left:15px;
+	top:0px;
+	margin-left:-400px;
+	color:#FFF;
+	-webkit-transition: all 0.3s; 
+	transition: all 0.3s;
+	background:url(./images/jinguo.png) no-repeat right top;
+	background-size:cover;
+	}
+    
+#banner:hover .banner_1_1{
+    margin-left:0;
+}
+.banner_1_1_b{
+    position: absolute;
+    bottom: 40px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.banner_1_1_b a{color:#fff}
