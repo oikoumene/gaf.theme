@@ -225,3 +225,7 @@ padding-right: 10px;
     width: 100%;
 }
 .banner_1_1_b a{color:#fff}
+
+dl.portlet.portletNavigationTree ul.navTree li a{
+    background: no-repeat transparent left center url(./images/dian.png);
+}
