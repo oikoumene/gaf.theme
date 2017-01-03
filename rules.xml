@@ -24,29 +24,44 @@
 
         <!-- Copy script tags from Plone head to end of body -->
         <after css:theme-children="html body" css:content="html head script" />
-
+        
+        <drop css:content=".portlet-static-banner-1" />
+        <drop css:content=".portlet-static-banner-2" />
+        <drop css:content=".portlet-static-banner-3" />
         <!-- Insert your own rules -->
         <replace css:theme=".jumbotron" css:if-content=".template-newsitem_view">
             <div id="feature-img-container" class="row">
-              <div id="banner" class="col-md-4">
-                    <img src="++theme++gaf.theme-master/images/xiaoguotu.jpg" alt="" />
+              <div id="banner" class="banner-1 col-md-4">
+                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
                     <div class="banner_1_1">
-        			    <div class="banner_1_1_a">测试文章3内容</div>
-    				    <Span class="banner_1_1_b"><a href="javascript:;">Leading</a></Span>
+        			    <div class="banner_1_1_a">
+            		        <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(2) > *"/> 
+        			    </div>
+    				    <Span class="banner_1_1_b"><a href="javascript:;">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(3) > *"/>    
+    				    </a></Span>
     			    </div>
               </div>
-              <div id="banner" class="col-md-4">
-                    <img src="++theme++gaf.theme-master/images/xiaoguotu.jpg" alt="" />
+              <div id="banner" class="banner-2 col-md-4">
+                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(1) > img"/> 
                     <div class="banner_1_1">
-            		    <div class="banner_1_1_a">测试文章3内容</div>
-    				    <Span class="banner_1_1_b"><a href="javascript:;">Leading</a></Span>
+            		    <div class="banner_1_1_a">
+            		        <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(2) > *"/> 
+        			    </div>
+    				    <Span class="banner_1_1_b"><a href="javascript:;">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(3) > *"/>    
+    				    </a></Span>
     			    </div>
               </div>
-              <div id="banner" class="col-md-4">
-                    <img src="++theme++gaf.theme-master/images/xiaoguotu.jpg" alt="" />
+              <div id="banner" class="banner-3 col-md-4">
+                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(1) > img"/> 
                     <div class="banner_1_1">
-            		    <div class="banner_1_1_a">测试文章3内容</div>
-    				    <Span class="banner_1_1_b"><a href="javascript:;">Leading</a></Span>
+            		    <div class="banner_1_1_a">
+            		        <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(2) > *"/> 
+        			    </div>
+    				    <Span class="banner_1_1_b"><a href="javascript:;">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(3) > *"/>    
+    				    </a></Span>
     			    </div>
               </div>
             </div>
@@ -81,9 +96,14 @@
             <xsl:copy-of css:select="#portal-personaltools-wrapper"/>    
         </before>
         
-        <replace css:theme-children="#banner-ing-wrapper">
+        <replace css:theme-children="#banner-img-wrapper">
             <img src="./media/banner-img.jpg" alt="banner" />
         </replace>
+        
+        <drop css:content=".portlet-static-page-description" />
+        <replace css:theme-children="#banner-text-wrapper" 
+            css:content-children=".portlet-static-page-description > dd"
+            />
 
     </rules>
 
