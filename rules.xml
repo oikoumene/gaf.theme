@@ -34,28 +34,34 @@
               <div id="banner" class="banner-1 col-md-4">
                     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
                     <div class="banner_1_1">
-        			    <div class="banner_1_1_a"></div>
-    				    <Span class="banner_1_1_b"><a href="javascript:;">
-        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(2) > *"/>    
-    				    </a></Span>
+        			    <div class="banner_1_1_a">
+            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(2) > *"/>   
+        			    </div>
+    				    <div class="banner_1_1_b">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(3) > *"/>
+                         </div>
     			    </div>
               </div>
               <div id="banner" class="banner-2 col-md-4">
                     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(1) > img"/> 
                     <div class="banner_1_1">
-            		    <div class="banner_1_1_a"></div>
-    				    <Span class="banner_1_1_b"><a href="javascript:;">
-        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(2) > *"/>    
-    				    </a></Span>
+            		    <div class="banner_1_1_a">
+            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(2) > *"/>   
+        			    </div>
+    				    <div class="banner_1_1_b">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(3) > *"/>
+                         </div>
     			    </div>
               </div>
               <div id="banner" class="banner-3 col-md-4">
                     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(1) > img"/> 
                     <div class="banner_1_1">
-            		    <div class="banner_1_1_a"></div>
-    				    <Span class="banner_1_1_b"><a href="javascript:;">
-        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(2) > *"/>    
-    				    </a></Span>
+            		    <div class="banner_1_1_a">
+            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(2) > *"/>   
+        			    </div>
+    				    <div class="banner_1_1_b">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(3) > *"/>
+                         </div>
     			    </div>
               </div>
             </div>
