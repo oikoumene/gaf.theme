@@ -35,6 +35,9 @@ ul#content-views a{
 #content a:visited, dl.portlet a:visited{
     color: #c92539 !important; 
 }
+.widget > .label > .value{
+    color: #333;
+}
 
 
 /*round btn*/
@@ -234,6 +237,10 @@ padding-right: 10px;
     left: 20px;
     display: block;
     width: 85%;
+}
+.banner_1_1_b strong{
+    display: block;
+    font-size: 1.25em;
 }
 .banner_1_1 a,
 .banner_1_1 p{color:#fff}
