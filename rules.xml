@@ -25,16 +25,98 @@
         <!-- Copy script tags from Plone head to end of body -->
         <after css:theme-children="html body" css:content="html head script" />
         
+        <drop 
+            css:theme=".jumbotron" 
+            css:if-content=".template-manage-portletsabovecontent,
+            .template-manage-portletsbelowcontent,
+            .template-manage-portlets,
+            .portaltype-plone-site" 
+        />
+        
         <drop css:content=".portlet-static-banner-1" />
         <drop css:content=".portlet-static-banner-2" />
         <drop css:content=".portlet-static-banner-3" />
         <!-- Insert your own rules -->
-        <replace css:theme=".jumbotron" css:if-content=".template-newsitem_view">
-            <div id="feature-img-container" class="row">
+        <replace css:theme=".jumbotron" if-path="en/">
+            <div id="feature-img-container">
               <div id="banner" class="banner-1 col-md-4">
                     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
                     <div class="banner_1_1">
         			    <div class="banner_1_1_a">
+            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(2) > *"/>   
+        			    </div>
+    				    <div class="banner_1_1_b">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(3) > *"/>
+                         </div>
+    			    </div>
+              </div>
+              <div id="banner" class="banner-2 col-md-4">
+                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(1) > img"/> 
+                    <div class="banner_1_1">
+            		    <div class="banner_1_1_a">
+            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(2) > *"/>   
+        			    </div>
+    				    <div class="banner_1_1_b">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(3) > *"/>
+                         </div>
+    			    </div>
+              </div>
+              <div id="banner" class="banner-3 col-md-4">
+                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(1) > img"/> 
+                    <div class="banner_1_1">
+            		    <div class="banner_1_1_a">
+            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(2) > *"/>   
+        			    </div>
+    				    <div class="banner_1_1_b">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(3) > *"/>
+                         </div>
+    			    </div>
+              </div>
+            </div>
+        </replace>
+        <replace css:theme=".jumbotron" if-path="kk/">
+            <div id="feature-img-container">
+              <div id="banner" class="banner-1 col-md-4">
+                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
+                    <div class="banner_1_1">
+            		    <div class="banner_1_1_a">
+            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(2) > *"/>   
+        			    </div>
+    				    <div class="banner_1_1_b">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(3) > *"/>
+                         </div>
+    			    </div>
+              </div>
+              <div id="banner" class="banner-2 col-md-4">
+                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(1) > img"/> 
+                    <div class="banner_1_1">
+            		    <div class="banner_1_1_a">
+            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(2) > *"/>   
+        			    </div>
+    				    <div class="banner_1_1_b">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(3) > *"/>
+                         </div>
+    			    </div>
+              </div>
+              <div id="banner" class="banner-3 col-md-4">
+                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(1) > img"/> 
+                    <div class="banner_1_1">
+            		    <div class="banner_1_1_a">
+            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(2) > *"/>   
+        			    </div>
+    				    <div class="banner_1_1_b">
+        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(3) > *"/>
+                         </div>
+    			    </div>
+              </div>
+            </div>
+        </replace>
+        <replace css:theme=".jumbotron" if-path="zh/">
+            <div id="feature-img-container">
+              <div id="banner" class="banner-1 col-md-4">
+                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
+                    <div class="banner_1_1">
+                	    <div class="banner_1_1_a">
             		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(2) > *"/>   
         			    </div>
     				    <div class="banner_1_1_b">

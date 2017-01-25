@@ -8,10 +8,6 @@ body {
 }
 
 /*fix plone css*/
-div.row {
-  float: none !important; 
-  width: auto !important; 
-}
 a:link, a:visited{
   color: #b7040b;
 }
@@ -153,6 +149,13 @@ padding-right: 10px;
   background-color: transparent;
   padding-right: 0 !important;
   padding-left: 0 !important;
+  padding-top:0;
+  padding-bottom:30px;
+  display: inline-block;
+  background-size:915px 37px;
+  width:100%;
+  min-height: 330px;
+  margin-bottom: 0 !important;
   }
 
   .jumbotron .inner-contaner{
@@ -163,6 +166,7 @@ padding-right: 10px;
     border: 3px solid #fff;
     border-radius: 5px;
     box-shadow: 1px 2px 3px #ccc;
+    background-color:#f2e9e0;
   }
 
 /* Supporting marketing content */
@@ -249,4 +253,49 @@ dl.portlet.portletNavigationTree ul.navTree li a{
     background: no-repeat transparent left center url(./images/dian.png);
     padding-left: 1.5em;
 }
+dl.portlet.portletNavigationTree ul.navTree li > ul > li a{
+    background: no-repeat transparent left center url(./images/hypen2.png);
+}
 dl.portlet.portletNavigationTree ul.navTree li > a > img{display: none}
+.bordered-container{
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: #e6e6e6 2px 3px 5px;
+}
+.contentwellportlets.row{float:none;position:inherit}
+
+
+/* dropdown css */
+ul#main-menu > li{position:relative;margin-left:15px;}
+ul#main-menu > li:first-child{margin-left:0}
+ul#main-menu > li > ul{
+    display:none !important;  
+    background-color: #f2e9e0;
+    box-shadow: #e6e6e6 2px 3px 5px;
+    border-radius: 5px;
+    width:200px;
+    position:absolute;
+    z-index:1;
+} 
+ul#main-menu ul > li > a{
+    border-bottom:1px solid #ccc;
+    border-top:1px solid #fff;
+}
+ul#main-menu ul > li:first-child > a{
+    border-top:none;
+}
+ul#main-menu ul > li:last-child > a{
+    border-bottom:none;
+}
+ul#main-menu ul > li > a{
+    display:block;
+    padding: 10px 20px;
+}
+ul#main-menu > li:hover > ul,
+ul#main-menu > li.selected:hover > ul{
+    display:block !important;
+} 
