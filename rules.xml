@@ -25,19 +25,39 @@
         <!-- Copy script tags from Plone head to end of body -->
         <after css:theme-children="html body" css:content="html head script" />
         
-        <drop 
-            css:theme=".jumbotron" 
-            css:if-content=".template-manage-portletsabovecontent,
-            .template-manage-portletsbelowcontent,
-            .template-manage-portlets,
-            .portaltype-plone-site" 
-        />
+        <replace css:theme-children=".login-img" if-path="zh">
+            <img width="355px" src="++theme++gaf.theme-master/images/login-zh2.png" alt="" />
+        </replace>
         
+        <drop css:content=".banner-portlet" />
         <drop css:content=".portlet-static-banner-1" />
         <drop css:content=".portlet-static-banner-2" />
         <drop css:content=".portlet-static-banner-3" />
+        
+        
+        <drop css:theme=".jumbotron" css:if-not-content="#banner_img_id" />
+        
         <!-- Insert your own rules -->
-        <replace css:theme=".jumbotron" if-path="en/">
+        
+        <!--inner banner-->
+        <replace css:theme-children=".row.inner-container" css:if-content="#banner_img_id">
+            <div class="jumbotron">
+                <div class="col-md-4" id="banner-text-wrapper">
+                  <xsl:copy-of select="//div[@id='banner_txt_id']/*" />
+                </div>
+                <div class="col-md-8" id="banner-img-wrapper">
+                    <xsl:element name="img">
+                        <xsl:attribute name="src">
+                            <xsl:copy-of select="//span[@id='banner_img_id']/text()" />
+                        </xsl:attribute>
+                    </xsl:element>
+                </div>
+            </div>
+        </replace>
+        
+        
+        <!--home banner-->
+        <replace css:theme-children=".row.inner-container" if-path="en/">
             <div id="feature-img-container">
               <div id="banner" class="banner-1 col-md-4">
                     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
@@ -74,7 +94,7 @@
               </div>
             </div>
         </replace>
-        <replace css:theme=".jumbotron" if-path="kk/">
+        <replace css:theme-children=".row.inner-container" if-path="kk/">
             <div id="feature-img-container">
               <div id="banner" class="banner-1 col-md-4">
                     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
@@ -111,7 +131,7 @@
               </div>
             </div>
         </replace>
-        <replace css:theme=".jumbotron" if-path="zh/">
+        <replace css:theme-children=".row.inner-container" if-path="zh/">
             <div id="feature-img-container">
               <div id="banner" class="banner-1 col-md-4">
                     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
@@ -149,7 +169,6 @@
             </div>
         </replace>
         
-        
        <replace
             css:theme="#branding > a"
             css:content="#portal-logo"
@@ -178,14 +197,6 @@
             <xsl:copy-of css:select="#portal-personaltools-wrapper"/>    
         </before>
         
-        <replace css:theme-children="#banner-img-wrapper">
-            <img src="./media/banner-img.jpg" alt="banner" />
-        </replace>
-        
-        <drop css:content=".portlet-static-page-description" />
-        <replace css:theme-children="#banner-text-wrapper" 
-            css:content-children=".portlet-static-page-description > dd"
-            />
 
     </rules>
 
