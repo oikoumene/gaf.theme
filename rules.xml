@@ -38,6 +38,8 @@
         <drop css:theme=".jumbotron" css:if-not-content="#banner_img_id" />
         
         <!-- Insert your own rules -->
+        <replace css:content-children="#portaltab-index_html-level1 > a" if-path="zh"><span>首页</span></replace>
+        <replace css:content-children="#breadcrumbs-home > a" if-path="zh">首页</replace>        
         
         <!--inner banner-->
         <replace css:theme-children=".row.inner-container" css:if-content="#banner_img_id">
