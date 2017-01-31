@@ -313,3 +313,6 @@ ul#main-menu > li > ul > li:hover > ul{
     box-shadow: #e6e6e6 2px 3px 5px;
     border-radius: 5px;
 }
+#portal-personaltools-wrapper{
+    min-height:42px;
+}
