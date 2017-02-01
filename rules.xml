@@ -57,9 +57,9 @@
             </div>
         </replace>
         
-        
         <!--home banner-->
-        <replace css:theme-children=".row.inner-container" if-path="en/">
+        <!--<replace css:theme-children=".row.inner-container" if-path="en/">-->
+        <replace css:theme-children=".row.inner-container" css:if-content=".template-document_view.section-front-page">
             <div id="feature-img-container">
               <div id="banner" class="banner-1 col-md-4">
                     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
@@ -96,44 +96,9 @@
               </div>
             </div>
         </replace>
-        <replace css:theme-children=".row.inner-container" if-path="kk/">
-            <div id="feature-img-container">
-              <div id="banner" class="banner-1 col-md-4">
-                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
-                    <div class="banner_1_1">
-            		    <div class="banner_1_1_a">
-            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(2) > *"/>   
-        			    </div>
-    				    <div class="banner_1_1_b">
-        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(3) > *"/>
-                         </div>
-    			    </div>
-              </div>
-              <div id="banner" class="banner-2 col-md-4">
-                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(1) > img"/> 
-                    <div class="banner_1_1">
-            		    <div class="banner_1_1_a">
-            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(2) > *"/>   
-        			    </div>
-    				    <div class="banner_1_1_b">
-        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-2 > dd > p:nth-child(3) > *"/>
-                         </div>
-    			    </div>
-              </div>
-              <div id="banner" class="banner-3 col-md-4">
-                    <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(1) > img"/> 
-                    <div class="banner_1_1">
-            		    <div class="banner_1_1_a">
-            		     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(2) > *"/>   
-        			    </div>
-    				    <div class="banner_1_1_b">
-        			     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-3 > dd > p:nth-child(3) > *"/>
-                         </div>
-    			    </div>
-              </div>
-            </div>
-        </replace>
-        <replace css:theme-children=".row.inner-container" if-path="zh/">
+        
+        <!--<replace css:theme-children=".row.inner-container" if-path="zh/">-->
+        <replace css:theme-children=".row.inner-container" css:if-content=".template-document_view.section-6b228fce8bbf95ee65e5518574e6723168a66210771f57fa91d14f1a">
             <div id="feature-img-container">
               <div id="banner" class="banner-1 col-md-4">
                     <xsl:copy-of css:select=".portlet.portletStaticText.portlet-static-banner-1 > dd > p:nth-child(1) > img"/> 
