@@ -156,6 +156,9 @@
             css:theme-children="#footer-link"
             css:content-children="#portal-siteactions"
             />
+        <after css:theme-children="#footer-link">
+            <li><a href="./subscription/view">Subscribe</a></li>
+        </after>
         <replace css:theme-children="#language-selector > ul"
             css:content-children="#portal-languageselector"
             />
