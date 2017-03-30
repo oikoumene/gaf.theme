@@ -316,3 +316,8 @@ ul#main-menu > li > ul > li:hover > ul{
 #portal-personaltools-wrapper{
     min-height:42px;
 }
+
+/*drop subscription link*/
+#portaltab-subscription-level1{
+  display: none;
+}
