@@ -140,6 +140,8 @@
             css:theme="#branding > a"
             css:content="#portal-logo"
             />
+        <!--drop subscripton in navigation item-->
+        <drop css:content="#portaltab-subscription-level1" />
         <replace
             css:theme-children="#main-menu"
             css:content-children="#portal-globalnav"
