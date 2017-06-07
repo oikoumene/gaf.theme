@@ -34,6 +34,7 @@ ul#content-views a{
 .widget > .label > .value{
     color: #333;
 }
+label span.label,
 .field div.label{
     color: #555;
     display:block;
