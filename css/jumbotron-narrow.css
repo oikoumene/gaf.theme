@@ -34,6 +34,15 @@ ul#content-views a{
 .widget > .label > .value{
     color: #333;
 }
+.field div.label{
+    color: #555;
+    display:block;
+    font-size:inherit;
+    line-height:inherit;
+    text-align:left;
+    white-space:normal;
+    padding-left:0;
+}
 
 
 /*round btn*/
@@ -76,8 +85,8 @@ padding-right: 10px;
 /*language selector*/
 #language-selector{
     position: absolute;
-    top: -39px;
-    right: 80px;    
+    right: 0; 
+    width:100%;
 }
 #language-selector ul li{
     padding:0;    
@@ -208,18 +217,18 @@ padding-right: 10px;
 
 .banner_1_1{
     width:70%;
-	height:385px;
-	float:left;
-	position:absolute;
-	left:15px;
-	top:0px;
-	margin-left:-400px;
-	color:#FFF;
-	-webkit-transition: all 0.3s; 
-	transition: all 0.3s;
-	background:url(./images/jinguo.png) no-repeat right top;
-	background-size:cover;
-	}
+  height:385px;
+  float:left;
+  position:absolute;
+  left:15px;
+  top:0px;
+  margin-left:-400px;
+  color:#FFF;
+  -webkit-transition: all 0.3s; 
+  transition: all 0.3s;
+  background:url(./images/jinguo.png) no-repeat right top;
+  background-size:cover;
+  }
     
 #banner:hover .banner_1_1{
     margin-left:0;
@@ -315,7 +324,9 @@ ul#main-menu > li > ul > li:hover > ul{
 }
 #portal-personaltools-wrapper{
     min-height:42px;
+    display:inline;
 }
+.login-img{margin-top:42px}
 
 /*drop subscription link*/
 #portaltab-subscription-level1{
