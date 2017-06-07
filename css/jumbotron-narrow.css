@@ -260,11 +260,16 @@ padding-right: 10px;
 .banner_1_1 p{color:#fff}
 
 dl.portlet.portletNavigationTree ul.navTree li a{
-    background: no-repeat transparent 0 9px url(./images/dian.png);
+    background-image: url(./images/dian.png);
     padding-left: 1.5em;
+    background-position-x: 0px;
+    background-position-y: 9px;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
 }
 dl.portlet.portletNavigationTree ul.navTree li > ul > li a{
-    background-image: url(./images/dian.png);
+    background-image: url(./images/hypen2.png);
     background-position-x: 0px;
     background-position-y: 9px;
     background-size: initial;
