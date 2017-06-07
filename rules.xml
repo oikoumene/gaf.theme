@@ -16,7 +16,7 @@
         <before css:theme-children="html head" css:content="html head base" />
 
         <!-- Copy link, style, meta tags from Plone head -->
-        <after css:theme-children="html head"
+        <before css:theme-children="html head"
                content="/html/head/link | /html/head/style | /html/head/meta" />
 
         <!-- merge classes from Plone body with theme body -->
