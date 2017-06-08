@@ -100,6 +100,9 @@ padding-right: 10px;
     color: #f1f0f0;
     background-color: #c92539;
 }
+#anon-personalbar #personaltools-login{
+  padding: 0 !important;
+}
 
 /*main menu*/
 #main-menu{
